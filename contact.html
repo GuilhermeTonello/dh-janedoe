@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>JANE DOE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="contact.html" class="atual">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2 class="music_subtitulo">Contact</h2>
+        
+        <form action="sucesso.html" name="contact" method="POST" data-netlify="true">
+            <table class="contact_table_campos">
+                <tr><td>Name</td></tr>
+                <tr><td><input type="text" name="name"></td></tr>
+                <tr><td>Email</td></tr>
+                <tr><td><input type="email" name="email"></td></tr>
+                <tr><td>Message</td></tr>
+                <tr><td>
+                    <textarea rows="5" cols="50" id="message_field" name="message_field"></textarea>
+                </td></tr>
+                <tr><td>How did you fond Jane's music?</td></tr>
+                <tr><td>
+                    <label class="container">
+                        <div id="rede_social">Instagram</div>
+                        <input type="radio" name="radio" value="instagram">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <div id="rede_social">Facebook</div>
+                        <input type="radio" name="radio" value="facebook">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">
+                        <div id="rede_social">Youtube</div>
+                        <input type="radio" name="radio" value="youtube">
+                        <span class="checkmark"></span>
+                    </label>
+                </td></tr>
+                <tr><td>
+                    <label id="container">
+                        <div id="subscription_box">Do you want to subscribe to our newsletter?</div>
+                        <input type="checkbox" name="box" value="subscribed">
+                        <span id="checkmark"></span>
+                    </label>
+                </td></tr>
+                <tr><td><button type="submit" id="submit_button">send</button></td></tr>
+            </table>
+        </form>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543.4746242574399!2d-46.67542567010751!3d-23.60265064625225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1588182415101!5m2!1sen!2sbr" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="tracejado"></div>
+        <p id="contatos">MANAGEMENT | Karen Blanche</p>
+        <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+        <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+        <div class="tracejado"></div>
+        <p id="contatos">BOOKING | Daniel Ku</p>
+        <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+        <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+        <div class="tracejado"></div>
+        <p id="contatos">LABEL | Wix Records, Jake Coldham</p>
+        <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+        <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+        <div class="tracejado"></div>
+        <p id="contatos">PR | That Girl Pr, Sarah Brookstone</p>
+        <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+        <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+        <div style="margin-bottom: 25px;"></div>
+        <footer>
+            <p>Copyright- Jane Doe</p>
+        </footer>
+    </body>
+</html>

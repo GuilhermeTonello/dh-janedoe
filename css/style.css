@@ -1,0 +1,327 @@
+/*
+@impot url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*/
+
+/* geral */
+
+* {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #FFF;
+    border: 1px solid gray;
+    z-index: 999;
+}
+
+nav ul {
+    padding-left: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+nav ul li a.atual {
+    color: #991f00;
+}
+
+footer p {
+    padding-top: 10px;
+    text-align: center;
+    background-color: #e6e6e6;
+    padding-bottom: 10px;
+}
+
+/* index.html */
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    margin-top: 80px;
+}
+
+h2.index_subtitulo {
+    margin-top: 10px;
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-bottom: 15px;
+}
+
+p {
+    padding-left: 200px;
+    padding-right: 150px;
+    padding-top: 20px;
+    text-align: center;
+    text-align: justify;
+}
+
+img.img_secundaria {
+    width: 55%;
+    height: 55%;
+    padding-left: 160px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+ol {
+    position: absolute;
+    right: 200px;
+    top: 880px;
+}
+
+ol li {
+    padding-bottom: 20px;
+}
+
+ol li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e6b800;
+}
+
+/*musica.html*/
+
+#music_ul {
+    margin-left: 240px;
+}
+
+#music_video {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+#music_info {
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+h2.music_subtitulo {
+    margin-top: 145px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+}
+
+/* about.html */
+
+#about_subtitulo {
+    margin-top: 180px;
+    text-align: center;
+}
+
+h3#about_frase {
+    margin-top: 30px;
+    text-align: center;
+}
+
+p#john {
+    margin-top: 15px;
+    padding-left: 150px;
+    text-align: center;
+}
+
+.imagem_jane2 {
+    margin-bottom: 75px;
+    margin-top: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* contact.html */
+
+table.contact_table_campos {
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+table tr td input, table tr td textarea {
+    border: 1px solid gray;
+    height: 30px;
+    width: 400px;
+    font-size: 17px;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+table tr td textarea#message_field {
+    height: 50px;
+}
+
+
+/* contact.html - radio button */
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #737373;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    bottom: 1px;
+    right: 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #262626;
+}
+
+div#rede_social {
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+/* contact.html - checkbox */
+
+#container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0px;
+}
+
+#checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #bfbfbf;
+}
+
+#container:hover input ~ #checkmark {
+    background-color: #737373;
+}
+
+#checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#container input:checked ~ #checkmark:after {
+    display: block;
+}
+
+#container #checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div#subscription_box {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* contact.html - submit button */
+button#submit_button {
+    margin-top: 15px;
+    margin-bottom: 80px;
+    background-color: rgb(255, 72, 26);
+    width: 90px;
+    height: 25px;
+    font-size: 15px;
+}
+
+/* contact.html - resto */
+
+.mapa {
+    position: absolute;
+    top: 200px;
+    right: 120px;
+}
+
+div.tracejado {
+    height: 3px;
+    width: 70%;
+    background-color: #a6a6a6;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    margin-left: 200px;
+}
+
+p#contatos {
+    font-size: 20px;
+    font-weight: bold;
+}
